@@ -12,14 +12,20 @@ body {
 }
 
 section {
+    background-color:rgba(142,187,223, 0.1) ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3%;
+    padding: 5% 0;
+    margin: 3% 10%;
+}
+
+header {
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
     color: white;
 }
@@ -28,12 +34,52 @@ h3 {
     color: #8EBBDF;
 }
 
+label {
+    font-size: 0.9rem;
+    color: #ccc;
+    padding-bottom: 5px;
+}
+
 .user-inputs {
     margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .user-inputs input {
     font-size: 1rem;
     text-align: center;
-    border: none;
+    width: 50px;
+    margin-bottom: 10px;
+    outline: none;
+    border-style: none;
+    border-bottom: 1px solid black;
+    
+}
+
+button {
+    color: #0065B7;
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #8EBBDF;
+    font-weight: bold;
+}
+
+#cotas-geradas {
+    margin: 0 10% 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    flex-wrap: wrap;
+}
+#cotas-geradas li {
+    background-color: #8EBBDF;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: 1rem;
 }

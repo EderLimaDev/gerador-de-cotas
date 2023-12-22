@@ -17,12 +17,12 @@ btn.addEventListener("click", () => {
   } else {
     for (let j = 0; j <= quantidadeDeCotasSolicitadas.value - 1; j++) {
       for (let i = 0; i < numerosPorCotas.value; i++) {
-        let numero = parseInt(Math.random() * 60);
+        let numero = Math.round(Math.random() * 60);
         cota.push(numero);
       }
       const newLine = document.createElement("li");
       listaCotas.appendChild(newLine);
-      newLine.innerHTML = cota.join(" ");
+      newLine.innerHTML = cota.join(" - ");
       cota = [];
     }
   }
