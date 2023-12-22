@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+body {
+    background-color: #0065B7;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+
+h3 {
+    color: #8EBBDF;
+}
+
+.user-inputs {
+    margin: 2%;
+}
+
+.user-inputs input {
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+}
