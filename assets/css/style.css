@@ -9,6 +9,8 @@
 
 body {
     background-color: #0065B7;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -68,6 +70,10 @@ button {
     font-weight: bold;
 }
 
+.numeros-gerados {
+    margin-top: 5%;
+}
+
 #cotas-geradas {
     margin: 0 10% 8% 10%;
     display: flex;
@@ -82,4 +88,13 @@ button {
     border-radius: 10px;
     margin: 0 10px;
     font-size: 1rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #ccc;
 }

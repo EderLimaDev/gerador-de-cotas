@@ -19,24 +19,31 @@
     <section>
         <header>
             <h1>Mega Sena</h1>
-            <h3>Gerador de Cotas</h3>
+            <h3>Gerador de Jogos</h3>
         </header>
         <div class="user-inputs">
-            <label for="input-cotas">Números por Cota</label>
-            <input id="numeros-por-cota" title="input-cotas" type="text" alt="Números por Cota">
-            <label for="quantidade-cotas">Quantidade de Cotas</label>
-            <input id="quantidade-solicitada" title="quantidade-cotas" alt="Quantidade de Cotas">
+            <label for="input-cotas">Números por Jogo</label>
+            <input id="numeros-por-cota" title="input-cotas" type="number" min="1" alt="Números por Cota">
+            <label for="quantidade-cotas">Quantidade de Jogos</label>
+            <input id="quantidade-solicitada" title="quantidade-cotas" alt="Quantidade de Cotas" type="number" min="1">
         </div>
         
 
-        <button id="btn-cotas">Gerar Cotas</button>
+        <button id="btn-cotas">Gerar Jogos</button>
+
+
+            <div class="numeros-gerados">
+                    <ol id="cotas-geradas">
+                
+                    </ol>
+                
+                </div>
+
+
+
     </section>
-    <div>
-        <ol id="cotas-geradas">
-    
-        </ol>
-    
-    </div>
+ 
+    <footer>Made By Eder Lima @devs2front 2023</footer>
     
     <script src="./assets/js/main.js"></script>
 </body>
