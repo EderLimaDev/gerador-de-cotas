@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>Mega da Virada</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <header>
-            <h1>Mega Sena</h1>
-            <h3>Gerador de Jogos</h3>
-        </header>
-        <div class="user-inputs">
-            <label for="input-cotas">Números por Jogo</label>
-            <input id="numeros-por-cota" title="input-cotas" type="number" min="1" alt="Números por Cota">
-            <label for="quantidade-cotas">Quantidade de Jogos</label>
-            <input id="quantidade-solicitada" title="quantidade-cotas" alt="Quantidade de Cotas" type="number" min="1">
-        </div>
-        
+      <header>
+        <h1>Mega Sena</h1>
+        <h3>Gerador de Jogos</h3>
+      </header>
+      <div class="user-inputs">
+        <label for="input-cotas">Números por Jogo</label>
+        <input
+          id="numeros-por-cota"
+          title="input-cotas"
+          type="number"
+          min="1"
+          alt="Números por Cota"
+        />
+        <label for="quantidade-cotas">Quantidade de Jogos</label>
+        <input
+          id="quantidade-solicitada"
+          title="quantidade-cotas"
+          alt="Quantidade de Cotas"
+          type="number"
+          min="1"
+        />
+      </div>
 
-        <button id="btn-cotas">Gerar Jogos</button>
+      <button id="btn-cotas">Gerar Jogos</button>
 
-
-            <div class="numeros-gerados">
-                    <ol id="cotas-geradas">
-                
-                    </ol>
-                
-                </div>
-
-
-
+      <div class="numeros-gerados">
+        <ol id="cotas-geradas"></ol>
+      </div>
     </section>
- 
+
     <footer>Made By Eder Lima @devs2front 2023</footer>
-    
+
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
