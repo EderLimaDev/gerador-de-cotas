@@ -19,7 +19,7 @@ btn.addEventListener("click", () => {
   } else {
     for (let j = 0; j <= quantidadeDeCotasSolicitadas.value - 1; j++) {
       for (let i = 0; i < numerosPorCotas.value; i++) {
-        let numero = Math.round(Math.random() * 60) + 1;
+        let numero = Math.round(Math.random() * 59) + 1;
         cota.push(numero.toString().padStart(2, "0"));
       }
       const newLine = document.createElement("li");
