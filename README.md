@@ -1,6 +1,7 @@
 # PROGRAMA PARA GERAR JOGOS ALEATÓRIOS 
 
 ## Possui validações nos campos de input para não aceitar letras, zero, valores negativos ou deixar em branco.
+## Implementado verificação para que cada cota não apresente números iguais.
 
 Pagina sem gerar nenhum jogo
 ![ederlimadev github io_gerador-de-cotas](https://github.com/EderLimaDev/gerador-de-cotas/assets/81269326/90a32f7d-0c13-4931-9416-0787b492d380)

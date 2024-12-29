@@ -12,67 +12,102 @@ html {
 
 
 body {
-    background-color: #0065B7;
+    background-color:rgba(142,187,223, 0.2) ;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     min-height: 100%;
 }
 
-section {
-    background-color:rgba(142,187,223, 0.1) ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5%;
-    margin: 3% 10%;
+body .background-image {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    right: -50px;
 }
+
+
+/* HEADER */
 
 header {
-    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 90px;
+    width: 100%;
+    background-color: #148164;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-header h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: white;
+/* NAVEGAÇÃO PRINCIPAL */
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+    position: relative;
+    z-index: 9;
+    top: 100px;
+    width: 80%;
+    margin: 10px 10%;
+    padding: 10px 20px;
+    border: 2px solid #148164;
+
+
 }
 
-h3 {
-    color: #8EBBDF;
+#main-nav h1 {
+    color:  #148164;
 }
 
 label {
     font-size: 0.9rem;
     color: #ccc;
-    padding-bottom: 5px;
 }
 
 .user-inputs {
-    margin: 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 10px;
     
+    
+}
+
+.user-inputs input::-webkit-inner-spin-button {
+    appearance: none;
 }
 
 .user-inputs input {
     font-size: 1rem;
     text-align: center;
+    height:40px;
     width: 50px;
-    margin-bottom: 10px;
     outline: none;
     border-style: none;
-    border-bottom: 1px solid black;
+    background-color: #afebd2;
+    font-weight: bold;
+    color: #148164;
+    border-bottom: 1px solid #148164;
     
 }
 
+
 button {
     color: #ffff;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 13px;
     border: 0;
-    background-color: #f7941e;
+    background-color: #148164;
     font-weight: bold;
     cursor: pointer;
 }
@@ -81,27 +116,72 @@ button:hover {
     transform: scale(1.1);
 }
 
-.numeros-gerados {
-    margin-top: 5%;
-    padding: 10px 0;
+
+/* CONTEUDO DINAMICO, NUMEROS */
+
+#cotas {
+    width: 80%;
+    display: flex;
+    margin-top: 150px;
+    
 }
+
+#cotas .numeros-gerados {
+    margin-top: 50px;
+    width: 100vw;
+    height: 100%;
+    top: 200px;
+}
+
 
 #cotas-geradas {
     margin: 0 10% 8% 10%;
-    padding-left: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     gap:20px;
     flex-wrap: wrap;
+    counter-reset: list-counter;
 }
+
+
 #cotas-geradas li {
-    background-color: #8EBBDF;
-    padding: 6px;
-    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #148164;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     margin: 0 10px;
     font-size: 1rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+    counter-increment: list-counter;
+    position: relative;
 }
+
+#cotas-geradas li::before {
+    content: "#" counter(list-counter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    font-size: small;
+}
+
+#cotas-geradas li span {
+    background-color: #148164;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* FOOTER */
+
 
 footer {
     margin-top: auto;
@@ -109,4 +189,30 @@ footer {
     font-size: 0.8rem;
     text-align: center;
     color: #ccc;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:  680px) {
+    #main-nav {
+        flex-direction: column;
+    }
+
+    .user-inputs {
+      flex-direction: column;
+        
+    }
+
+    body .background-image {
+        height: 80%;
+        width: 150%;
+   
+    }
+
+    footer {
+        background-color: #fff;
+        color: #000;
+    }
 }

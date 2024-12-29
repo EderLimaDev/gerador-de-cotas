@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="crie jogos para mega sena rápido e facil, seu bolão vai ser muito mais prático">
+    <meta name="keywords" content="criar bolao da mega sena, bolao mega sena, bolao" >
+    <meta name="author" content="Eder Lima">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/icon/icon.png" type="image/x-icon">
+
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,11 +22,25 @@
     <title>Mega da Virada</title>
   </head>
   <body>
-    <section>
-      <header>
-        <h1>Mega Sena</h1>
-        <h3>Gerador de Jogos</h3>
-      </header>
+
+    <!--INICIO HEADER-->
+    <header>
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="" />
+      </div>
+    </header>
+
+    <!--FIM HEADER-->
+
+
+
+    <!--INICIO NAVEGAÇÃO PRINCIPAL-->
+
+    <section id="main-nav">
+   
+      <h1>Crie seu Bolão agora!!</h1>
+     
+
       <div class="user-inputs">
         <label for="input-cotas">Números por Jogo</label>
         <input
@@ -39,14 +58,30 @@
           type="number"
           min="1"
         />
+
+        <button id="btn-cotas">Gerar Jogos</button>
       </div>
+    </section>
 
-      <button id="btn-cotas">Gerar Jogos</button>
+    <!--FIM NAVEGAÇÃO PRINCIPAL-->
 
+
+    <!--IMAGEM DE FUNDO-->
+    <img class="background-image" src="./assets/images/Cabecalho.png" alt="" />
+
+
+    <!--INICIO CONTEUDO DINAMICO, NUMEROS GERADOS-->
+
+    <section id="cotas">
       <div class="numeros-gerados">
         <ol id="cotas-geradas"></ol>
       </div>
     </section>
+
+    <!--FIM CONTEUDO DINAMICO, NUMEROS GERADOS-->
+
+
+    <!--FOOTER-->
 
     <footer>Made By Eder Lima @devs2front 2023</footer>
 

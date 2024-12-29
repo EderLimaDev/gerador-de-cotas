@@ -29,7 +29,9 @@ btn.addEventListener("click", () => {
       
       const newLine = document.createElement("li");
       listaCotas.appendChild(newLine);
-      newLine.innerHTML = cota.join(" - ");
+      newLine.innerHTML = cota.map((item) => (
+        `<span>${item}</span>`
+      )).join(" ");
       cota = [];
     }
   }
