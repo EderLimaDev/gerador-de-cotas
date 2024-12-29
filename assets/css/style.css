@@ -215,4 +215,10 @@ footer {
         background-color: #fff;
         color: #000;
     }
+
+    
+    #cotas-geradas {
+        margin: 0 0 8% 0;
+  
+    }
 }
